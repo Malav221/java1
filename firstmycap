@@ -1,0 +1,23 @@
+package mycap;
+
+import java.util.Scanner;
+public class mycapfirst{
+
+    public static void main(String[] Strings) {
+int years,days;
+double min;
+
+        double minutestoYear = 60 * 24 * 365;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Input the number of minutes: ");
+
+        min = input.nextDouble();
+
+      years = (int)(min / minutestoYear);
+        days = (int) (min / 60 / 24) % 365;
+
+        System.out.println((int) min + " minutes is approximately " + years + " years and " + days + " days");
+    }
+}
